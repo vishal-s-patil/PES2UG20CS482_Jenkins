@@ -8,7 +8,9 @@ pipeline {
       }
     }
     stage('Test'){
+      steps{
         sh './a.out'
+      }
     }
   }
   post {
