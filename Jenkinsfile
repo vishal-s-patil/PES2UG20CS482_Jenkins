@@ -12,6 +12,11 @@ pipeline {
         sh './a.out'
       }
     }
+    stage('Deploy'){
+      steps{
+        echo 'Deploy'
+      }
+    }
   }
   post {
     failure {
